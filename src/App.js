@@ -14,6 +14,7 @@ const App = () => {
     <Web3ReactProvider getLibrary={getLibrary}>
       <div className="App">
         <Home />
+        <br></br>
         <Collection />
       </div>
     </Web3ReactProvider>

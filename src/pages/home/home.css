@@ -1,10 +1,21 @@
-
+.metamask{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+}
+.connect-metamask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .home-button{
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     text-align: center;
     flex-direction: row;
+    width: 80%;
     padding: 7px;
     font-size: 15px;
     font-weight: 700;

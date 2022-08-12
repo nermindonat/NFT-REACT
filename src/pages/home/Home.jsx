@@ -16,11 +16,20 @@ const Home = () => {
   }
 
   return (
-    <div>
-      <button className='home-button' onClick={connect}>
+    <div className='metamask'>
+      <div className="connect-metamask">
         <img className='logo' src="/assets/images/logo.png" alt="" />
-        Connet to MetaMask
+        <h2>Connet to MetaMask</h2>
+      </div>
+      <button className='home-button' onClick={connect} >
+        <img className='logo' src="/assets/images/polygon_logo.png" alt="" />
+        Plygon Network
       </button>
+      <button className='home-button' onClick={connect} >
+        <img className='logo' src="/assets/images/bsc_logo.png" alt="" />
+        BSC Network
+      </button>
+      
     </div>
   )
 }

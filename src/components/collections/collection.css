@@ -14,24 +14,42 @@ body{
 }
 
 .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
-
 
 .collection-card{
     overflow: hidden;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-right: 5px;
     cursor: pointer;
     transition: transform 200ms ease-in;
+    background-color: rgb(245, 241, 241);
 }
 
 .collection-image{
     height: 12rem;
     width: 100%;
     object-fit: cover;
+}
+
+.collection-title{
+    padding: 0.75rem;
+    font-size: 15px;
+
+}
+
+.col-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.75rem;
+}
+
+.collection_price{
+    font-size: 12px;
 }

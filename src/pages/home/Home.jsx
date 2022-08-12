@@ -1,31 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.css";
 import { useWeb3React } from "@web3-react/core";
 import { injected } from "../../components/connectors/injected";
 import { Web3ReactProvider } from "@web3-react/core";
 import Collection from "../collections/Collection";
 
-const Home = () => {
+const Home = ({ setIsLogin }) => {
   const { active, acount, activate, deactivate } = useWeb3React();
-
-  const getLibrary = (provider) => {
-    return new Web3ReactProvider(provider);
-  };
 
   // click to connect
   const connect = async () => {
     try {
-      console.log(injected)
-      let response = await activate(injected);
-      if (response) {
-        console.log("response", response);
-      }
+      await activate(injected);
+      setIsLogin(true);
+
     } catch (error) {
       console.log(error);
     }
   };
 
- 
+  const getLibrary = (provider) => {
+    return new Web3ReactProvider(provider);
+  };
 
   return (
     <Web3ReactProvider getLibrary={getLibrary}>

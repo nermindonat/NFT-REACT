@@ -3,6 +3,14 @@
     justify-content: baseline;
     align-items: center;
     flex-direction: column;
+    background-color: #313135;
+    padding: 15px;
+    border-radius: 5px;
+    width: 20%;
+}
+
+span{
+    color: #F7F7F7;
 }
 .connect-metamask{
     display: flex;
@@ -11,7 +19,6 @@
 }
 .home-button{
     display: flex;
-    
     align-items: center;
     text-align: center;
     flex-direction: row;
@@ -21,7 +28,7 @@
     font-weight: 700;
     background-color: #292929;
     color: #F7F7F7;
-    border: 0;
+    border: 1px solid #9b9797;
     margin-top: 20px;
     border-radius: 10px;
     height: 50px;
